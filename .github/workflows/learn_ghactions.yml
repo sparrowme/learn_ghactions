@@ -21,7 +21,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-        python-version: ${{matrix.python-version}} # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          python-version: ${{matrix.python-version}} # Version range or exact version of a Python version to use, using SemVer's version range syntax
         #  architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - run: python helloworld.py        
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
