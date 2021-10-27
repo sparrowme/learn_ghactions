@@ -3,7 +3,7 @@ import sys
 
 def main():
     print(f"Hello World! {sys.version_info}")
-    if sys.version_info == (3, 6):
+    if sys.version_info >= (3, 6) and sys.version_info < (3, 8):
         # let's make this script fail for python 3.6
         x = 1/0
 
