@@ -11,7 +11,7 @@ jobs:
             python-version: '3.8'
           - os: windows-latest
             python-version: '3.6'
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     steps:
       - run: echo "Job automatically triggered by event ${{ github.event_name }}."
       - run: echo "Job running on a ${{ runner.os }} server hosted by GitHub."
@@ -19,7 +19,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Setup Python
-        uses: actions/setup-python@v2
+        #uses: actions/setup-python@v2
         with:
           python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
